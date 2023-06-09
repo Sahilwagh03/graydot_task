@@ -1,21 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
 }
-body{
+
+body {
     background: aliceblue;
 }
 
-.container{
+.container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     margin: 20px;
 }
 
-#left , #right{
+#left,
+#right {
     width: 470px;
     height: 600px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -24,7 +26,7 @@ body{
     border-style: dashed;
 }
 
-.list{
+.list {
     width: 388px;
     height: 100px;
     background: #9E9E9E;
@@ -59,10 +61,96 @@ body{
     font-size: 15px;
 }
 
-.hold{
-    opacity: 1;
+.btn_div {
+    position: absolute;
+    top: 370px;
+    left: 577px;
 }
 
-.dashed{
-    background: #00000029;
+button {
+    border: none;
+    background: #69f469;
+    width: 130px;
+    height: 30px;
+    font-size: 1rem;
+    border-radius: 30px;
+}
+
+
+@media (max-width: 600px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        margin: 20px;
+        row-gap: 20px;
+    }
+
+    #left,
+    #right {
+        width: 321px;
+        height: 600px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 16px 48px #00000029;
+        border-radius: 15px;
+        border-style: dashed;
+    }
+
+    .list {
+        width: 254px;
+        height: 100px;
+        background: #9E9E9E;
+        margin: 40px;
+        border-radius: 5px;
+        padding: 2px;
+    }
+
+    .star {
+        width: 16px;
+        height: 15px;
+    }
+
+    .btn_div {
+        display: grid;
+        justify-items: center;
+        top: 0;
+        left: 0;
+        position: unset;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 840px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        margin: 20px;
+    }
+
+    #left,
+    #right {
+        width: 366px;
+        height: 600px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 16px 48px #00000029;
+        border-radius: 15px;
+        border-style: dashed;
+    }
+
+    .list {
+        width: 296px;
+        height: 100px;
+        background: #9E9E9E;
+        margin: 40px;
+        border-radius: 5px;
+        padding: 2px;
+    }
+
+
+    .btn_div {
+        position: unset;
+        display: grid;
+        justify-items: center;
+    }
 }
