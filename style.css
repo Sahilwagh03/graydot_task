@@ -1,3 +1,4 @@
+/* Reset styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,10 +6,12 @@
     box-sizing: border-box;
 }
 
+/* Body styles */
 body {
     background: aliceblue;
 }
 
+/* Container styles */
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -16,6 +19,7 @@ body {
     margin: 20px;
 }
 
+/* Left and right box styles */
 #left,
 #right {
     width: 470px;
@@ -26,6 +30,7 @@ body {
     border-style: dashed;
 }
 
+/* List styles */
 .list {
     width: 388px;
     height: 100px;
@@ -35,7 +40,7 @@ body {
     padding: 2px;
 }
 
-
+/* Image, star, and grid styles */
 .img_star_grid {
     display: grid;
     grid-template-columns: 170px auto;
@@ -47,7 +52,6 @@ body {
     width: 21px;
     height: 23px;
 }
-
 
 .grid_5 {
     display: grid;
@@ -61,6 +65,7 @@ body {
     font-size: 15px;
 }
 
+/* Button styles */
 .btn_div {
     position: absolute;
     top: 370px;
@@ -76,9 +81,10 @@ button {
     border-radius: 30px;
 }
 
-
+/* Media query for screens with a maximum width of 600px */
 @media (max-width: 600px) {
 
+    /* Adjust container styles for smaller screens */
     .container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -87,6 +93,7 @@ button {
         row-gap: 20px;
     }
 
+    /* Adjust left and right box styles for smaller screens */
     #left,
     #right {
         width: 321px;
@@ -97,6 +104,7 @@ button {
         border-style: dashed;
     }
 
+    /* Adjust list styles for smaller screens */
     .list {
         width: 254px;
         height: 100px;
@@ -106,11 +114,13 @@ button {
         padding: 2px;
     }
 
+    /* Adjust star styles for smaller screens */
     .star {
         width: 16px;
         height: 15px;
     }
 
+    /* Adjust button div styles for smaller screens */
     .btn_div {
         display: grid;
         justify-items: center;
@@ -120,7 +130,10 @@ button {
     }
 }
 
+/* Media query for screens with a minimum width of 601px and maximum width of 840px */
 @media (min-width: 601px) and (max-width: 840px) {
+
+    /* Adjust container styles for medium screens */
     .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -128,6 +141,7 @@ button {
         margin: 20px;
     }
 
+    /* Adjust left and right box styles for medium screens */
     #left,
     #right {
         width: 366px;
@@ -138,6 +152,7 @@ button {
         border-style: dashed;
     }
 
+    /* Adjust list styles for medium screens */
     .list {
         width: 296px;
         height: 100px;
@@ -147,7 +162,7 @@ button {
         padding: 2px;
     }
 
-
+    /* Adjust button div styles for medium screens */
     .btn_div {
         position: unset;
         display: grid;
